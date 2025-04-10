@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak Tiwari | Cybersecurity Enthusiast</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white font-poppins">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-md">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <a href="#hero" class="flex items-center nav-logo">
+                    <img src="Deepak_logo.jpg" alt="Deepak Tiwari" class="h-16 w-16 rounded-full border-2 border-blue-400 object-cover hover:border-blue-300 transition-all duration-300">
+                    <span class="ml-3 text-xl font-bold text-white">Deepak Tiwari</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#achievements" class="nav-link">Achievements</a>
+                    <a href="#resume" class="nav-link">Resume</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Hi, I'm Deepak Tiwari</h1>
+            <div class="text-2xl md:text-4xl mb-8">
+                <span id="typed-text"></span>
+            </div>
+            <div class="space-x-4">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="My_resume.pdf" class="btn-secondary">Download Resume</a>
+                <a href="#contact" class="btn-tertiary">Connect with Me</a>
+            </div>
+        </div>
+        <canvas id="matrix-bg" class="absolute inset-0 -z-10"></canvas>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-8">About Me</h2>
+            <div class="glass-card p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <p class="text-lg mb-6">Hi 👋 I'm Deepak Tiwari, a passionate and self-driven BCA final-year student from Dr. Ram Manohar Lohia Avadh University (RMLAU), Ayodhya — currently diving deep into the world of <span class="text-blue-400">Cybersecurity</span>, <span class="text-blue-400">Python development</span>, and <span class="text-blue-400">Networking</span>.</p>
+                        <p class="text-lg mb-6">🔐 I specialize in building tools that explore system vulnerabilities, automate reconnaissance, and improve digital security. Whether it's creating custom recon tools like <span class="text-green-400">ReconX</span>, or crafting a secure GUI-based <span class="text-green-400">Password Manager</span> with AES encryption, I'm always focused on blending functionality with security.</p>
+                        <p class="text-lg mb-6">💡 I believe in learning by doing. Platforms like <span class="text-yellow-400">TryHackMe</span> have been instrumental in sharpening my practical hacking skills through CTFs and real-world simulations — from privilege escalation to web app exploitation.</p>
+                    </div>
+                    <div>
+                        <div class="mb-6">
+                            <h3 class="text-xl font-semibold mb-4">🛠️ My Current Stack</h3>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="skill-badge">
+                                    <i class="fas fa-code text-blue-400"></i>
+                                    <span>Python, JavaScript</span>
+                                </div>
+                                <div class="skill-badge">
+                                    <i class="fas fa-cubes text-green-400"></i>
+                                    <span>React.js, FastAPI</span>
+                                </div>
+                                <div class="skill-badge">
+                                    <i class="fas fa-shield-alt text-yellow-400"></i>
+                                    <span>Nmap, Metasploit</span>
+                                </div>
+                                <div class="skill-badge">
+                                    <i class="fas fa-database text-red-400"></i>
+                                    <span>MongoDB, PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-4">🌱 Currently Learning</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    <span>Web application security</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    <span>Advanced exploitation (LFI, RCE, SUID)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                    <span>Bug bounty & reporting vulnerabilities ethically</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-lg">🎯 My goal is to become a skilled <span class="text-blue-400">Penetration Tester</span> or <span class="text-blue-400">Security Engineer</span>, contributing to open-source security tools and helping secure the digital world — one exploit at a time.</p>
+                    <div class="mt-6">
+                        <a href="#contact" class="btn-primary">
+                            <i class="fas fa-handshake mr-2"></i> Let's Connect
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-8">Skills & Tools</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass-card p-6 skill-card">
+                    <div class="skill-icon mb-4">
+                        <i class="fas fa-code text-blue-400 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Languages</h3>
+                    <div class="space-y-4">
+                        <div class="skill-progress">
+                            <div class="flex justify-between mb-1">
+                                <span>Python</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="flex justify-between mb-1">
+                                <span>JavaScript</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="flex justify-between mb-1">
+                                <span>HTML/CSS</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card p-6 skill-card">
+                    <div class="skill-icon mb-4">
+                        <i class="fas fa-cubes text-green-400 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Frameworks</h3>
+                    <div class="space-y-4">
+                        <div class="skill-progress">
+                            <div class="flex justify-between mb-1">
+                                <span>React.js</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="flex justify-between mb-1">
+                                <span>FastAPI</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="flex justify-between mb-1">
+                                <span>Tailwind CSS</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card p-6 skill-card">
+                    <div class="skill-icon mb-4">
+                        <i class="fas fa-shield-alt text-yellow-400 text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Cyber Tools</h3>
+                    <div class="space-y-4">
+                        <div class="skill-progress">
+                            <div class="flex justify-between mb-1">
+                                <span>Nmap</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="flex justify-between mb-1">
+                                <span>Burp Suite</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="flex justify-between mb-1">
+                                <span>Metasploit</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="skill-badge">
+                    <i class="fab fa-git-alt text-red-400"></i>
+                    <span>Git</span>
+                </div>
+                <div class="skill-badge">
+                    <i class="fas fa-database text-blue-400"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="skill-badge">
+                    <i class="fas fa-network-wired text-green-400"></i>
+                    <span>Networking</span>
+                </div>
+                <div class="skill-badge">
+                    <i class="fas fa-bug text-yellow-400"></i>
+                    <span>Bug Bounty</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-6 project-card">
+                    <div class="project-image mb-4">
+                        <img src="reconx-screenshot.png" alt="ReconX Screenshot" class="rounded-lg">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Deepak-tiwari-cyber/ReconX" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://reconx-demo.vercel.app" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">ReconX</h3>
+                    <p class="mb-4">Info Gathering Tool built with Python using OSINT, Nmap, and subdomain scanning.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OSINT</span>
+                        <span class="tech-tag">Nmap</span>
+                        <span class="tech-tag">FastAPI</span>
+                    </div>
+                </div>
+                <div class="glass-card p-6 project-card">
+                    <div class="project-image mb-4">
+                        <img src="password-manager-screenshot.png" alt="Password Manager Screenshot" class="rounded-lg">
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Password Manager</h3>
+                    <p class="mb-4">GUI App built using Python + Tkinter with AES encryption for secure password storage.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Tkinter</span>
+                        <span class="tech-tag">AES</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-blue-400 hover:text-blue-300">
+                            <i class="fab fa-github mr-2"></i> View on GitHub
+                        </a>
+                        <a href="#" class="text-blue-400 hover:text-blue-300">
+                            <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Stats Section -->
+    <section id="github-stats" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-8">GitHub Stats</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-6">
+                    <img src="https://github-readme-stats.vercel.app/api?username=Deepak-tiwari-cyber&show_icons=true&theme=radical" alt="GitHub Stats" class="w-full" />
+                </div>
+                <div class="glass-card p-6">
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Deepak-tiwari-cyber&layout=compact&theme=radical" alt="Top Languages" class="w-full" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-8">Resume</h2>
+            <div class="glass-card p-6">
+                <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                    <div class="mb-4 md:mb-0">
+                        <h3 class="text-2xl font-semibold">Deepak Tiwari</h3>
+                        <p class="text-gray-400">Cybersecurity Enthusiast & Developer</p>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="My_resume.pdf" download class="btn-primary">
+                            <i class="fas fa-download mr-2"></i> Download PDF
+                        </a>
+                        <a href="https://drive.google.com/file/d/1ke-e32O03ZhLc4IAa8lDmG-xWQ490CNz/view?usp=drivesdk" target="_blank" class="btn-secondary">
+                            <i class="fas fa-external-link-alt mr-2"></i> View Online
+                        </a>
+                    </div>
+                </div>
+                <div class="resume-preview">
+                    <iframe src="My_resume.pdf" width="100%" height="600px" class="rounded-lg"></iframe>
+                </div>
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="resume-highlight">
+                        <h4 class="text-xl font-semibold mb-4">Key Skills</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                <span>Python Development</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                <span>Web Security & Penetration Testing</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                <span>Network Security</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                                <span>Bug Bounty Hunting</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume-highlight">
+                        <h4 class="text-xl font-semibold mb-4">Certifications</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-yellow-400 mr-2"></i>
+                                <span>TryHackMe Top 1%</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-yellow-400 mr-2"></i>
+                                <span>Bug Bounty Hunter</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-certificate text-yellow-400 mr-2"></i>
+                                <span>Network Security Specialist</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TryHackMe Achievements Section -->
+    <section id="achievements" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-8">TryHackMe Achievements</h2>
+            <div class="glass-card p-8">
+                <div class="mb-6">
+                    <h3 class="text-2xl font-semibold mb-4">Recent CTF: Bricks (Heist)</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="skill-badge">
+                            <i class="fas fa-search text-blue-400 mr-2"></i>
+                            Local File Inclusion (LFI)
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fas fa-code text-blue-400 mr-2"></i>
+                            PHP Exploitation & Log Poisoning
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fas fa-terminal text-blue-400 mr-2"></i>
+                            Command Injection via Web Shells
+                        </div>
+                        <div class="skill-badge">
+                            <i class="fas fa-shield-alt text-blue-400 mr-2"></i>
+                            Privilege Escalation using SUID Binary
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <p class="text-lg mb-4">Learning by doing is the real game-changer, and I'm leveling up one room at a time 🚀</p>
+                    <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+                        <div class="flex items-center space-x-4">
+                            <a href="https://tryhackme.com/p/WhiteDevil111" class="btn-primary">
+                                <i class="fab fa-tryhackme mr-2"></i> View Profile
+                            </a>
+                            <div class="flex space-x-4">
+                                <div class="achievement-badge">
+                                    <i class="fas fa-flag text-green-400"></i>
+                                    <span>Total Flags: 25+</span>
+                                </div>
+                                <div class="achievement-badge">
+                                    <i class="fas fa-door-open text-yellow-400"></i>
+                                    <span>Rooms: 15+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex space-x-2">
+                            <span class="hashtag">#CyberSecurity</span>
+                            <span class="hashtag">#TryHackMe</span>
+                            <span class="hashtag">#CTF</span>
+                            <span class="hashtag">#BugBounty</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-8 text-center">Get in Touch</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-8">
+                    <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope text-blue-400 text-xl"></i>
+                            <div>
+                                <h4 class="text-gray-300">Email</h4>
+                                <a href="mailto:dt668259@gmail.com" class="text-white hover:text-blue-400 transition-colors">dt668259@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone text-blue-400 text-xl"></i>
+                            <div>
+                                <h4 class="text-gray-300">Phone</h4>
+                                <a href="tel:6306968630" class="text-white hover:text-blue-400 transition-colors">6306968630</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt text-blue-400 text-xl"></i>
+                            <div>
+                                <h4 class="text-gray-300">Location</h4>
+                                <p class="text-white">Azamgarh, Uttar Pradesh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card p-8">
+                    <h3 class="text-2xl font-semibold mb-6">Connect with Me</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="https://github.com/Deepak-tiwari-cyber" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com/in/deepak-tiwari-95a103265" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://tryhackme.com/p/WhiteDevil111" target="_blank" class="social-link">
+                            <i class="fab fa-tryhackme"></i>
+                            <span>TryHackMe</span>
+                        </a>
+                        <a href="mailto:dt668259@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="text-xl font-semibold mb-4">Send a Message</h4>
+                        <form class="space-y-4">
+                            <div>
+                                <input type="text" placeholder="Your Name" class="form-input">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Your Email" class="form-input">
+                            </div>
+                            <div>
+                                <textarea placeholder="Your Message" rows="4" class="form-input"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-full">
+                                <i class="fas fa-paper-plane mr-2"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center">
+        <p>Made with ❤️ by Deepak Tiwari</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
