@@ -41,10 +41,6 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 - Modify `styles.css` for styling changes
 - Update `script.js` for animation effects
 
-## License
-
-MIT License
-
 ## Contact
 
 - Email: dt668259@gmail.com
